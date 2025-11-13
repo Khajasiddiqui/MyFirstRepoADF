@@ -7,6 +7,42 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "MYADFFIRSTDEMO"
 		},
+		"adfdb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'adfdb'"
+		},
+		"movestg_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'movestg'"
+		},
+		"myflatsrc_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'myflatsrc'"
+		},
+		"source_file_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'source_file'"
+		},
+		"srcinputblob_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'srcinputblob'"
+		},
+		"tgtoutputblob_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'tgtoutputblob'"
+		},
+		"adfdb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"adfdb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"adfdb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +69,33 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"adfdb_password": {
+						"value": "[parameters('adfdb_password')]"
+					},
+					"movestg_connectionString": {
+						"value": "[parameters('movestg_connectionString')]"
+					},
+					"myflatsrc_connectionString": {
+						"value": "[parameters('myflatsrc_connectionString')]"
+					},
+					"source_file_connectionString": {
+						"value": "[parameters('source_file_connectionString')]"
+					},
+					"srcinputblob_connectionString": {
+						"value": "[parameters('srcinputblob_connectionString')]"
+					},
+					"tgtoutputblob_connectionString": {
+						"value": "[parameters('tgtoutputblob_connectionString')]"
+					},
+					"adfdb_properties_typeProperties_server": {
+						"value": "[parameters('adfdb_properties_typeProperties_server')]"
+					},
+					"adfdb_properties_typeProperties_database": {
+						"value": "[parameters('adfdb_properties_typeProperties_database')]"
+					},
+					"adfdb_properties_typeProperties_userName": {
+						"value": "[parameters('adfdb_properties_typeProperties_userName')]"
 					}
 				}
 			},

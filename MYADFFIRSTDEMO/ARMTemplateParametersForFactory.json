@@ -4,6 +4,33 @@
 	"parameters": {
 		"factoryName": {
 			"value": "MYADFFIRSTDEMO"
+		},
+		"adfdb_password": {
+			"value": ""
+		},
+		"movestg_connectionString": {
+			"value": ""
+		},
+		"myflatsrc_connectionString": {
+			"value": ""
+		},
+		"source_file_connectionString": {
+			"value": ""
+		},
+		"srcinputblob_connectionString": {
+			"value": ""
+		},
+		"tgtoutputblob_connectionString": {
+			"value": ""
+		},
+		"adfdb_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"adfdb_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"adfdb_properties_typeProperties_userName": {
+			"value": "Amjad"
 		}
 	}
 }
