@@ -20,8 +20,6 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFolderPath": "*.txt",
-							"wildcardFileName": "employee",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -31,11 +29,38 @@
 					"sink": {
 						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": false
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "empid",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "EmpID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ename",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Name",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
@@ -45,7 +70,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "flatsrc",
 						"type": "DatasetReference"
 					}
 				],
