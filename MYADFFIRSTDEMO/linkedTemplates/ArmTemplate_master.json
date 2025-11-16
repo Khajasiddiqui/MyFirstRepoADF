@@ -11,6 +11,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'adfdb'"
 		},
+		"azure_sql_db_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'azure_sql_db'"
+		},
+		"excel_storage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'excel_storage'"
+		},
 		"movestg_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'movestg'"
@@ -40,6 +48,18 @@
 			"defaultValue": "myadfdb"
 		},
 		"adfdb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
+		"azure_sql_db_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"azure_sql_db_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"azure_sql_db_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Amjad"
 		},
@@ -73,6 +93,12 @@
 					"adfdb_password": {
 						"value": "[parameters('adfdb_password')]"
 					},
+					"azure_sql_db_password": {
+						"value": "[parameters('azure_sql_db_password')]"
+					},
+					"excel_storage_connectionString": {
+						"value": "[parameters('excel_storage_connectionString')]"
+					},
 					"movestg_connectionString": {
 						"value": "[parameters('movestg_connectionString')]"
 					},
@@ -96,6 +122,15 @@
 					},
 					"adfdb_properties_typeProperties_userName": {
 						"value": "[parameters('adfdb_properties_typeProperties_userName')]"
+					},
+					"azure_sql_db_properties_typeProperties_server": {
+						"value": "[parameters('azure_sql_db_properties_typeProperties_server')]"
+					},
+					"azure_sql_db_properties_typeProperties_database": {
+						"value": "[parameters('azure_sql_db_properties_typeProperties_database')]"
+					},
+					"azure_sql_db_properties_typeProperties_userName": {
+						"value": "[parameters('azure_sql_db_properties_typeProperties_userName')]"
 					}
 				}
 			},

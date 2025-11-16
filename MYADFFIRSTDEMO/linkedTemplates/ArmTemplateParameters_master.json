@@ -8,6 +8,12 @@
 		"adfdb_password": {
 			"value": ""
 		},
+		"azure_sql_db_password": {
+			"value": ""
+		},
+		"excel_storage_connectionString": {
+			"value": ""
+		},
 		"movestg_connectionString": {
 			"value": ""
 		},
@@ -30,6 +36,15 @@
 			"value": "myadfdb"
 		},
 		"adfdb_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"azure_sql_db_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"azure_sql_db_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"azure_sql_db_properties_typeProperties_userName": {
 			"value": "Amjad"
 		},
 		"containerUri": {
