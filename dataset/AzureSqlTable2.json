@@ -1,0 +1,24 @@
+{
+	"name": "AzureSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "excel_dynamic_table",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"dstablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().dstablename",
+				"type": "Expression"
+			}
+		}
+	}
+}

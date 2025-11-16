@@ -1,0 +1,29 @@
+{
+	"name": "Excel2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"dssheetname": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": {
+				"value": "@dataset().dssheetname",
+				"type": "Expression"
+			},
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "myexcelfile.xlsx",
+				"container": "input"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
