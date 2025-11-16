@@ -29,6 +29,12 @@
 		"tgtoutputblob_connectionString": {
 			"value": ""
 		},
+		"excel_dynamic_table_password": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
 		"adfdb_properties_typeProperties_server": {
 			"value": "demoadfservers.database.windows.net"
 		},
@@ -45,6 +51,15 @@
 			"value": "myadfdb"
 		},
 		"azure_sql_db_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"excel_dynamic_table_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"excel_dynamic_table_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"excel_dynamic_table_properties_typeProperties_userName": {
 			"value": "Amjad"
 		}
 	}

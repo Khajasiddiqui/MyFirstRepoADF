@@ -39,6 +39,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'tgtoutputblob'"
 		},
+		"excel_dynamic_table_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'excel_dynamic_table'"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
 		"adfdb_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "demoadfservers.database.windows.net"
@@ -60,6 +68,18 @@
 			"defaultValue": "myadfdb"
 		},
 		"azure_sql_db_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
+		"excel_dynamic_table_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"excel_dynamic_table_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"excel_dynamic_table_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Amjad"
 		},
@@ -114,6 +134,12 @@
 					"tgtoutputblob_connectionString": {
 						"value": "[parameters('tgtoutputblob_connectionString')]"
 					},
+					"excel_dynamic_table_password": {
+						"value": "[parameters('excel_dynamic_table_password')]"
+					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
 					"adfdb_properties_typeProperties_server": {
 						"value": "[parameters('adfdb_properties_typeProperties_server')]"
 					},
@@ -131,10 +157,39 @@
 					},
 					"azure_sql_db_properties_typeProperties_userName": {
 						"value": "[parameters('azure_sql_db_properties_typeProperties_userName')]"
+					},
+					"excel_dynamic_table_properties_typeProperties_server": {
+						"value": "[parameters('excel_dynamic_table_properties_typeProperties_server')]"
+					},
+					"excel_dynamic_table_properties_typeProperties_database": {
+						"value": "[parameters('excel_dynamic_table_properties_typeProperties_database')]"
+					},
+					"excel_dynamic_table_properties_typeProperties_userName": {
+						"value": "[parameters('excel_dynamic_table_properties_typeProperties_userName')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "MYADFFIRSTDEMO_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'MYADFFIRSTDEMO_ArmTemplate_0')]"
+			]
 		}
 	]
 }
