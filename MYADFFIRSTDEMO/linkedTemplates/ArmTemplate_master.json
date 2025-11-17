@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "MYADFFIRSTDEMO"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
 		"adfdb_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'adfdb'"
@@ -14,6 +18,10 @@
 		"azure_sql_db_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'azure_sql_db'"
+		},
+		"excel_dynamic_table_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'excel_dynamic_table'"
 		},
 		"excel_storage_connectionString": {
 			"type": "secureString",
@@ -39,13 +47,49 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'tgtoutputblob'"
 		},
-		"excel_dynamic_table_password": {
+		"source_db_badrecrods_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'excel_dynamic_table'"
+			"metadata": "Secure string for 'password' of 'source_db_badrecrods'"
 		},
-		"AzureBlobStorage1_connectionString": {
+		"target_bad_records_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+			"metadata": "Secure string for 'password' of 'target_bad_records'"
+		},
+		"AzureSqlDatabase1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
+		},
+		"AzureBlobStorage2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2'"
+		},
+		"AzureBlobStorage3_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage3'"
+		},
+		"AzureSqlDatabase2_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase2'"
+		},
+		"AzureBlobStorage4_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage4'"
+		},
+		"AzureSqlDatabase3_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase3'"
+		},
+		"AzureBlobStorage5_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage5'"
+		},
+		"AzureBlobStorage6_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage6'"
+		},
+		"AzureBlobStorage7_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage7'"
 		},
 		"adfdb_properties_typeProperties_server": {
 			"type": "string",
@@ -83,6 +127,66 @@
 			"type": "string",
 			"defaultValue": "Amjad"
 		},
+		"source_db_badrecrods_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"source_db_badrecrods_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"source_db_badrecrods_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
+		"target_bad_records_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"target_bad_records_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"target_bad_records_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -110,11 +214,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
 					"adfdb_password": {
 						"value": "[parameters('adfdb_password')]"
 					},
 					"azure_sql_db_password": {
 						"value": "[parameters('azure_sql_db_password')]"
+					},
+					"excel_dynamic_table_password": {
+						"value": "[parameters('excel_dynamic_table_password')]"
 					},
 					"excel_storage_connectionString": {
 						"value": "[parameters('excel_storage_connectionString')]"
@@ -134,11 +244,29 @@
 					"tgtoutputblob_connectionString": {
 						"value": "[parameters('tgtoutputblob_connectionString')]"
 					},
-					"excel_dynamic_table_password": {
-						"value": "[parameters('excel_dynamic_table_password')]"
+					"source_db_badrecrods_password": {
+						"value": "[parameters('source_db_badrecrods_password')]"
 					},
-					"AzureBlobStorage1_connectionString": {
-						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					"target_bad_records_password": {
+						"value": "[parameters('target_bad_records_password')]"
+					},
+					"AzureSqlDatabase1_password": {
+						"value": "[parameters('AzureSqlDatabase1_password')]"
+					},
+					"AzureBlobStorage2_connectionString": {
+						"value": "[parameters('AzureBlobStorage2_connectionString')]"
+					},
+					"AzureBlobStorage3_connectionString": {
+						"value": "[parameters('AzureBlobStorage3_connectionString')]"
+					},
+					"AzureSqlDatabase2_password": {
+						"value": "[parameters('AzureSqlDatabase2_password')]"
+					},
+					"AzureBlobStorage4_connectionString": {
+						"value": "[parameters('AzureBlobStorage4_connectionString')]"
+					},
+					"AzureSqlDatabase3_password": {
+						"value": "[parameters('AzureSqlDatabase3_password')]"
 					},
 					"adfdb_properties_typeProperties_server": {
 						"value": "[parameters('adfdb_properties_typeProperties_server')]"
@@ -166,6 +294,51 @@
 					},
 					"excel_dynamic_table_properties_typeProperties_userName": {
 						"value": "[parameters('excel_dynamic_table_properties_typeProperties_userName')]"
+					},
+					"source_db_badrecrods_properties_typeProperties_server": {
+						"value": "[parameters('source_db_badrecrods_properties_typeProperties_server')]"
+					},
+					"source_db_badrecrods_properties_typeProperties_database": {
+						"value": "[parameters('source_db_badrecrods_properties_typeProperties_database')]"
+					},
+					"source_db_badrecrods_properties_typeProperties_userName": {
+						"value": "[parameters('source_db_badrecrods_properties_typeProperties_userName')]"
+					},
+					"target_bad_records_properties_typeProperties_server": {
+						"value": "[parameters('target_bad_records_properties_typeProperties_server')]"
+					},
+					"target_bad_records_properties_typeProperties_database": {
+						"value": "[parameters('target_bad_records_properties_typeProperties_database')]"
+					},
+					"target_bad_records_properties_typeProperties_userName": {
+						"value": "[parameters('target_bad_records_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase2_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase2_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase2_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase3_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase3_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase3_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_userName')]"
 					}
 				}
 			},
@@ -184,11 +357,40 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"AzureBlobStorage5_connectionString": {
+						"value": "[parameters('AzureBlobStorage5_connectionString')]"
+					},
+					"AzureBlobStorage6_connectionString": {
+						"value": "[parameters('AzureBlobStorage6_connectionString')]"
+					},
+					"AzureBlobStorage7_connectionString": {
+						"value": "[parameters('AzureBlobStorage7_connectionString')]"
 					}
 				}
 			},
 			"dependsOn": [
 				"[resourceId('Microsoft.Resources/deployments', 'MYADFFIRSTDEMO_ArmTemplate_0')]"
+			]
+		},
+		{
+			"name": "MYADFFIRSTDEMO_ArmTemplate_2",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'MYADFFIRSTDEMO_ArmTemplate_1')]"
 			]
 		}
 	]

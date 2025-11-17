@@ -5,10 +5,16 @@
 		"factoryName": {
 			"value": "MYADFFIRSTDEMO"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
 		"adfdb_password": {
 			"value": ""
 		},
 		"azure_sql_db_password": {
+			"value": ""
+		},
+		"excel_dynamic_table_password": {
 			"value": ""
 		},
 		"excel_storage_connectionString": {
@@ -29,10 +35,37 @@
 		"tgtoutputblob_connectionString": {
 			"value": ""
 		},
-		"excel_dynamic_table_password": {
+		"source_db_badrecrods_password": {
 			"value": ""
 		},
-		"AzureBlobStorage1_connectionString": {
+		"target_bad_records_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"AzureBlobStorage4_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase3_password": {
+			"value": ""
+		},
+		"AzureBlobStorage5_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage6_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage7_connectionString": {
 			"value": ""
 		},
 		"adfdb_properties_typeProperties_server": {
@@ -60,6 +93,51 @@
 			"value": "myadfdb"
 		},
 		"excel_dynamic_table_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"source_db_badrecrods_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"source_db_badrecrods_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"source_db_badrecrods_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"target_bad_records_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"target_bad_records_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"target_bad_records_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
 			"value": "Amjad"
 		},
 		"containerUri": {
