@@ -1,0 +1,24 @@
+{
+	"name": "AzureSqlTable10",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase7",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	}
+}
