@@ -8,6 +8,21 @@
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
+		"AzureBlobStorage10_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage11_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage12_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage13_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage14_connectionString": {
+			"value": ""
+		},
 		"AzureBlobStorage2_connectionString": {
 			"value": ""
 		},
@@ -26,6 +41,12 @@
 		"AzureBlobStorage7_connectionString": {
 			"value": ""
 		},
+		"AzureBlobStorage8_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage9_connectionString": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
@@ -33,6 +54,18 @@
 			"value": ""
 		},
 		"AzureSqlDatabase3_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase4_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase5_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase6_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase7_password": {
 			"value": ""
 		},
 		"adfdb_password": {
@@ -68,33 +101,6 @@
 		"tgtoutputblob_connectionString": {
 			"value": ""
 		},
-		"AzureSqlDatabase4_password": {
-			"value": ""
-		},
-		"AzureBlobStorage8_connectionString": {
-			"value": ""
-		},
-		"AzureBlobStorage9_connectionString": {
-			"value": ""
-		},
-		"AzureSqlDatabase5_password": {
-			"value": ""
-		},
-		"AzureBlobStorage10_connectionString": {
-			"value": ""
-		},
-		"AzureSqlDatabase6_password": {
-			"value": ""
-		},
-		"AzureBlobStorage11_connectionString": {
-			"value": ""
-		},
-		"AzureBlobStorage12_connectionString": {
-			"value": ""
-		},
-		"AzureSqlDatabase7_password": {
-			"value": ""
-		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"value": "demoadfservers.database.windows.net"
 		},
@@ -120,6 +126,42 @@
 			"value": "myadfdb"
 		},
 		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_userName": {
 			"value": "Amjad"
 		},
 		"adfdb_properties_typeProperties_server": {
@@ -167,41 +209,11 @@
 		"target_bad_records_properties_typeProperties_userName": {
 			"value": "Amjad"
 		},
-		"AzureSqlDatabase4_properties_typeProperties_server": {
-			"value": "demoadfservers.database.windows.net"
+		"Trigger_0gh_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
 		},
-		"AzureSqlDatabase4_properties_typeProperties_database": {
-			"value": "myadfdb"
-		},
-		"AzureSqlDatabase4_properties_typeProperties_userName": {
-			"value": "Amjad"
-		},
-		"AzureSqlDatabase5_properties_typeProperties_server": {
-			"value": "demoadfservers.database.windows.net"
-		},
-		"AzureSqlDatabase5_properties_typeProperties_database": {
-			"value": "myadfdb"
-		},
-		"AzureSqlDatabase5_properties_typeProperties_userName": {
-			"value": "Amjad"
-		},
-		"AzureSqlDatabase6_properties_typeProperties_server": {
-			"value": "demoadfservers.database.windows.net"
-		},
-		"AzureSqlDatabase6_properties_typeProperties_database": {
-			"value": "myadfdb"
-		},
-		"AzureSqlDatabase6_properties_typeProperties_userName": {
-			"value": "Amjad"
-		},
-		"AzureSqlDatabase7_properties_typeProperties_server": {
-			"value": "demoadfservers.database.windows.net"
-		},
-		"AzureSqlDatabase7_properties_typeProperties_database": {
-			"value": "myadfdb"
-		},
-		"AzureSqlDatabase7_properties_typeProperties_userName": {
-			"value": "Amjad"
+		"Trigger_0gh_properties_pipeline_parameters_windowEnd": {
+			"value": "@trigger().outputs.windowEndTime"
 		},
 		"containerUri": {
 			"value": ""
