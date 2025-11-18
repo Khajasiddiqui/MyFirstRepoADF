@@ -1,0 +1,34 @@
+{
+	"name": "AzureSqlTable9",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase6",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FName",
+				"type": "varchar"
+			},
+			{
+				"name": "LName",
+				"type": "varchar"
+			},
+			{
+				"name": "FullName",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Customers"
+		}
+	}
+}
