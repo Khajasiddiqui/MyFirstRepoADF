@@ -86,6 +86,15 @@
 		"AzureSqlDatabase6_password": {
 			"value": ""
 		},
+		"AzureBlobStorage11_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage12_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase7_password": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"value": "demoadfservers.database.windows.net"
 		},
@@ -183,6 +192,15 @@
 			"value": "myadfdb"
 		},
 		"AzureSqlDatabase6_properties_typeProperties_userName": {
+			"value": "Amjad"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_server": {
+			"value": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_database": {
+			"value": "myadfdb"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_userName": {
 			"value": "Amjad"
 		}
 	}

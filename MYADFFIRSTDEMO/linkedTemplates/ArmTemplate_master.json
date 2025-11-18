@@ -115,6 +115,18 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase6'"
 		},
+		"AzureBlobStorage11_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage11'"
+		},
+		"AzureBlobStorage12_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage12'"
+		},
+		"AzureSqlDatabase7_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase7'"
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "demoadfservers.database.windows.net"
@@ -244,6 +256,18 @@
 			"defaultValue": "myadfdb"
 		},
 		"AzureSqlDatabase6_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Amjad"
 		},
@@ -436,6 +460,15 @@
 					"AzureSqlDatabase6_password": {
 						"value": "[parameters('AzureSqlDatabase6_password')]"
 					},
+					"AzureBlobStorage11_connectionString": {
+						"value": "[parameters('AzureBlobStorage11_connectionString')]"
+					},
+					"AzureBlobStorage12_connectionString": {
+						"value": "[parameters('AzureBlobStorage12_connectionString')]"
+					},
+					"AzureSqlDatabase7_password": {
+						"value": "[parameters('AzureSqlDatabase7_password')]"
+					},
 					"target_bad_records_properties_typeProperties_server": {
 						"value": "[parameters('target_bad_records_properties_typeProperties_server')]"
 					},
@@ -471,6 +504,15 @@
 					},
 					"AzureSqlDatabase6_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase6_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase7_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase7_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase7_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase7_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase7_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase7_properties_typeProperties_userName')]"
 					}
 				}
 			},
