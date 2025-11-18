@@ -11,6 +11,42 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
+		"AzureBlobStorage2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2'"
+		},
+		"AzureBlobStorage3_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage3'"
+		},
+		"AzureBlobStorage4_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage4'"
+		},
+		"AzureBlobStorage5_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage5'"
+		},
+		"AzureBlobStorage6_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage6'"
+		},
+		"AzureBlobStorage7_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage7'"
+		},
+		"AzureSqlDatabase1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
+		},
+		"AzureSqlDatabase2_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase2'"
+		},
+		"AzureSqlDatabase3_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase3'"
+		},
 		"adfdb_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'adfdb'"
@@ -35,6 +71,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'myflatsrc'"
 		},
+		"source_db_badrecrods_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'source_db_badrecrods'"
+		},
 		"source_file_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'source_file'"
@@ -43,53 +83,73 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'srcinputblob'"
 		},
-		"tgtoutputblob_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'tgtoutputblob'"
-		},
-		"source_db_badrecrods_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'source_db_badrecrods'"
-		},
 		"target_bad_records_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'target_bad_records'"
 		},
-		"AzureSqlDatabase1_password": {
+		"tgtoutputblob_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
+			"metadata": "Secure string for 'connectionString' of 'tgtoutputblob'"
 		},
-		"AzureBlobStorage2_connectionString": {
+		"AzureSqlDatabase4_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2'"
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase4'"
 		},
-		"AzureBlobStorage3_connectionString": {
+		"AzureBlobStorage8_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage3'"
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage8'"
 		},
-		"AzureSqlDatabase2_password": {
+		"AzureBlobStorage9_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'AzureSqlDatabase2'"
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage9'"
 		},
-		"AzureBlobStorage4_connectionString": {
+		"AzureSqlDatabase5_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage4'"
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase5'"
 		},
-		"AzureSqlDatabase3_password": {
+		"AzureBlobStorage10_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'AzureSqlDatabase3'"
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage10'"
 		},
-		"AzureBlobStorage5_connectionString": {
+		"AzureSqlDatabase6_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage5'"
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase6'"
 		},
-		"AzureBlobStorage6_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage6'"
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
 		},
-		"AzureBlobStorage7_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage7'"
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demoadfservers.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "myadfdb"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Amjad"
 		},
 		"adfdb_properties_typeProperties_server": {
 			"type": "string",
@@ -151,39 +211,39 @@
 			"type": "string",
 			"defaultValue": "Amjad"
 		},
-		"AzureSqlDatabase1_properties_typeProperties_server": {
+		"AzureSqlDatabase4_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "demoadfservers.database.windows.net"
 		},
-		"AzureSqlDatabase1_properties_typeProperties_database": {
+		"AzureSqlDatabase4_properties_typeProperties_database": {
 			"type": "string",
 			"defaultValue": "myadfdb"
 		},
-		"AzureSqlDatabase1_properties_typeProperties_userName": {
+		"AzureSqlDatabase4_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Amjad"
 		},
-		"AzureSqlDatabase2_properties_typeProperties_server": {
+		"AzureSqlDatabase5_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "demoadfservers.database.windows.net"
 		},
-		"AzureSqlDatabase2_properties_typeProperties_database": {
+		"AzureSqlDatabase5_properties_typeProperties_database": {
 			"type": "string",
 			"defaultValue": "myadfdb"
 		},
-		"AzureSqlDatabase2_properties_typeProperties_userName": {
+		"AzureSqlDatabase5_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Amjad"
 		},
-		"AzureSqlDatabase3_properties_typeProperties_server": {
+		"AzureSqlDatabase6_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "demoadfservers.database.windows.net"
 		},
-		"AzureSqlDatabase3_properties_typeProperties_database": {
+		"AzureSqlDatabase6_properties_typeProperties_database": {
 			"type": "string",
 			"defaultValue": "myadfdb"
 		},
-		"AzureSqlDatabase3_properties_typeProperties_userName": {
+		"AzureSqlDatabase6_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Amjad"
 		},
@@ -217,6 +277,33 @@
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
 					},
+					"AzureBlobStorage2_connectionString": {
+						"value": "[parameters('AzureBlobStorage2_connectionString')]"
+					},
+					"AzureBlobStorage3_connectionString": {
+						"value": "[parameters('AzureBlobStorage3_connectionString')]"
+					},
+					"AzureBlobStorage4_connectionString": {
+						"value": "[parameters('AzureBlobStorage4_connectionString')]"
+					},
+					"AzureBlobStorage5_connectionString": {
+						"value": "[parameters('AzureBlobStorage5_connectionString')]"
+					},
+					"AzureBlobStorage6_connectionString": {
+						"value": "[parameters('AzureBlobStorage6_connectionString')]"
+					},
+					"AzureBlobStorage7_connectionString": {
+						"value": "[parameters('AzureBlobStorage7_connectionString')]"
+					},
+					"AzureSqlDatabase1_password": {
+						"value": "[parameters('AzureSqlDatabase1_password')]"
+					},
+					"AzureSqlDatabase2_password": {
+						"value": "[parameters('AzureSqlDatabase2_password')]"
+					},
+					"AzureSqlDatabase3_password": {
+						"value": "[parameters('AzureSqlDatabase3_password')]"
+					},
 					"adfdb_password": {
 						"value": "[parameters('adfdb_password')]"
 					},
@@ -235,38 +322,38 @@
 					"myflatsrc_connectionString": {
 						"value": "[parameters('myflatsrc_connectionString')]"
 					},
-					"source_file_connectionString": {
-						"value": "[parameters('source_file_connectionString')]"
-					},
-					"srcinputblob_connectionString": {
-						"value": "[parameters('srcinputblob_connectionString')]"
-					},
-					"tgtoutputblob_connectionString": {
-						"value": "[parameters('tgtoutputblob_connectionString')]"
-					},
 					"source_db_badrecrods_password": {
 						"value": "[parameters('source_db_badrecrods_password')]"
 					},
-					"target_bad_records_password": {
-						"value": "[parameters('target_bad_records_password')]"
+					"source_file_connectionString": {
+						"value": "[parameters('source_file_connectionString')]"
 					},
-					"AzureSqlDatabase1_password": {
-						"value": "[parameters('AzureSqlDatabase1_password')]"
+					"AzureSqlDatabase1_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
 					},
-					"AzureBlobStorage2_connectionString": {
-						"value": "[parameters('AzureBlobStorage2_connectionString')]"
+					"AzureSqlDatabase1_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
 					},
-					"AzureBlobStorage3_connectionString": {
-						"value": "[parameters('AzureBlobStorage3_connectionString')]"
+					"AzureSqlDatabase1_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
 					},
-					"AzureSqlDatabase2_password": {
-						"value": "[parameters('AzureSqlDatabase2_password')]"
+					"AzureSqlDatabase2_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_server')]"
 					},
-					"AzureBlobStorage4_connectionString": {
-						"value": "[parameters('AzureBlobStorage4_connectionString')]"
+					"AzureSqlDatabase2_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_database')]"
 					},
-					"AzureSqlDatabase3_password": {
-						"value": "[parameters('AzureSqlDatabase3_password')]"
+					"AzureSqlDatabase2_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase3_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase3_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase3_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_userName')]"
 					},
 					"adfdb_properties_typeProperties_server": {
 						"value": "[parameters('adfdb_properties_typeProperties_server')]"
@@ -303,42 +390,6 @@
 					},
 					"source_db_badrecrods_properties_typeProperties_userName": {
 						"value": "[parameters('source_db_badrecrods_properties_typeProperties_userName')]"
-					},
-					"target_bad_records_properties_typeProperties_server": {
-						"value": "[parameters('target_bad_records_properties_typeProperties_server')]"
-					},
-					"target_bad_records_properties_typeProperties_database": {
-						"value": "[parameters('target_bad_records_properties_typeProperties_database')]"
-					},
-					"target_bad_records_properties_typeProperties_userName": {
-						"value": "[parameters('target_bad_records_properties_typeProperties_userName')]"
-					},
-					"AzureSqlDatabase1_properties_typeProperties_server": {
-						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
-					},
-					"AzureSqlDatabase1_properties_typeProperties_database": {
-						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
-					},
-					"AzureSqlDatabase1_properties_typeProperties_userName": {
-						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
-					},
-					"AzureSqlDatabase2_properties_typeProperties_server": {
-						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_server')]"
-					},
-					"AzureSqlDatabase2_properties_typeProperties_database": {
-						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_database')]"
-					},
-					"AzureSqlDatabase2_properties_typeProperties_userName": {
-						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_userName')]"
-					},
-					"AzureSqlDatabase3_properties_typeProperties_server": {
-						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_server')]"
-					},
-					"AzureSqlDatabase3_properties_typeProperties_database": {
-						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_database')]"
-					},
-					"AzureSqlDatabase3_properties_typeProperties_userName": {
-						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_userName')]"
 					}
 				}
 			},
@@ -358,14 +409,68 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureBlobStorage5_connectionString": {
-						"value": "[parameters('AzureBlobStorage5_connectionString')]"
+					"srcinputblob_connectionString": {
+						"value": "[parameters('srcinputblob_connectionString')]"
 					},
-					"AzureBlobStorage6_connectionString": {
-						"value": "[parameters('AzureBlobStorage6_connectionString')]"
+					"target_bad_records_password": {
+						"value": "[parameters('target_bad_records_password')]"
 					},
-					"AzureBlobStorage7_connectionString": {
-						"value": "[parameters('AzureBlobStorage7_connectionString')]"
+					"tgtoutputblob_connectionString": {
+						"value": "[parameters('tgtoutputblob_connectionString')]"
+					},
+					"AzureSqlDatabase4_password": {
+						"value": "[parameters('AzureSqlDatabase4_password')]"
+					},
+					"AzureBlobStorage8_connectionString": {
+						"value": "[parameters('AzureBlobStorage8_connectionString')]"
+					},
+					"AzureBlobStorage9_connectionString": {
+						"value": "[parameters('AzureBlobStorage9_connectionString')]"
+					},
+					"AzureSqlDatabase5_password": {
+						"value": "[parameters('AzureSqlDatabase5_password')]"
+					},
+					"AzureBlobStorage10_connectionString": {
+						"value": "[parameters('AzureBlobStorage10_connectionString')]"
+					},
+					"AzureSqlDatabase6_password": {
+						"value": "[parameters('AzureSqlDatabase6_password')]"
+					},
+					"target_bad_records_properties_typeProperties_server": {
+						"value": "[parameters('target_bad_records_properties_typeProperties_server')]"
+					},
+					"target_bad_records_properties_typeProperties_database": {
+						"value": "[parameters('target_bad_records_properties_typeProperties_database')]"
+					},
+					"target_bad_records_properties_typeProperties_userName": {
+						"value": "[parameters('target_bad_records_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase4_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase4_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase4_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase4_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase4_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase4_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase5_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase5_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase5_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase5_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase5_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase5_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase6_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase6_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase6_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase6_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase6_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase6_properties_typeProperties_userName')]"
 					}
 				}
 			},
@@ -391,6 +496,26 @@
 			},
 			"dependsOn": [
 				"[resourceId('Microsoft.Resources/deployments', 'MYADFFIRSTDEMO_ArmTemplate_1')]"
+			]
+		},
+		{
+			"name": "MYADFFIRSTDEMO_ArmTemplate_3",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_3.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'MYADFFIRSTDEMO_ArmTemplate_2')]"
 			]
 		}
 	]
