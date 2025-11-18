@@ -37,7 +37,8 @@
 								"value": "@pipeline().parameters.windowEnd",
 								"type": "Expression"
 							},
-							"wildcardFileName": "*"
+							"wildcardFileName": "test*.txt",
+							"deleteFilesAfterCompletion": false
 						},
 						"formatSettings": {
 							"type": "BinaryReadSettings"
