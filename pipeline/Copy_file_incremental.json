@@ -37,7 +37,7 @@
 								"value": "@pipeline().parameters.windowEnd",
 								"type": "Expression"
 							},
-							"wildcardFileName": "test*.txt",
+							"wildcardFileName": "*.txt",
 							"deleteFilesAfterCompletion": false
 						},
 						"formatSettings": {
